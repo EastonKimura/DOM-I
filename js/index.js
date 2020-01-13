@@ -42,43 +42,43 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 var temp;
 var tempTexts;
-// Loop for nav bar
+// LOOP FOR SETTING NAV BAR
 for(let i = 0; i < 6; i++) {
   var nav = document.querySelectorAll('a');
   nav[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
   nav[i].setAttribute('href', '#', siteContent["nav"]["nav-item-" + (i + 1)]);
 }
-// Button "Get Started"
-temp = document.querySelector('button');
-temp.textContent = siteContent["cta"]["button"];
-temp.setAttribute('button', siteContent["cta"]["button"]);
-// Dom is awesome
+// DOM IS AWESOME 
 temp = document.querySelector('h1');
 temp.textContent = siteContent["cta"]["h1"];
 temp.setAttribute('h1', siteContent["cta"]["h1"]);
-// footer
-temp[5].textContent = siteContent["contact"]["contact-h4"];
-tempTexts[5].textContent = siteContent["contact"]["address"];
-tempTexts[6].textContent = siteContent["contact"]["phone"];
-tempTexts[7].textContent = siteContent["contact"]["email"];
-tempTexts[8].textContent = siteContent["footer"]["copyright"];
-// img
+// BUTTON "GET STARTED"
+temp = document.querySelector('button');
+temp.textContent = siteContent["cta"]["button"];
+temp.setAttribute('button', siteContent["cta"]["button"]);
+// CIRCLE IMG
 img = document.getElementById("cta-img");
 img.setAttribute('src', siteContent["cta"]["img-src"]);
-// headings
+// FEATURES / HEADINGS
 temp = document.querySelectorAll('h4');
 temp[0].textContent = siteContent["main-content"]["features-h4"];
 temp[1].textContent = siteContent["main-content"]["about-h4"];
 temp[2].textContent = siteContent["main-content"]["services-h4"];
 temp[3].textContent = siteContent["main-content"]["product-h4"];
 temp[4].textContent = siteContent["main-content"]["vision-h4"];
-// m-img
+// MIDDLE IMG
 img = document.getElementById("middle-img");
 img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
-// content
+// TEXT CONTENTS
 tempTexts = document.querySelectorAll('p');
 tempTexts[0].textContent = siteContent["main-content"]["features-content"];
 tempTexts[1].textContent = siteContent["main-content"]["about-content"];
 tempTexts[2].textContent = siteContent["main-content"]["services-content"];
 tempTexts[3].textContent = siteContent["main-content"]["product-content"];
 tempTexts[4].textContent = siteContent["main-content"]["vision-content"];
+// FOOTER/CONTACT
+temp[5].textContent = siteContent["contact"]["contact-h4"];
+tempTexts[5].textContent = siteContent["contact"]["address"];
+tempTexts[6].textContent = siteContent["contact"]["phone"];
+tempTexts[7].textContent = siteContent["contact"]["email"];
+tempTexts[8].textContent = siteContent["footer"]["copyright"];
